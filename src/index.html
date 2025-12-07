@@ -8,16 +8,26 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
+    <div class="header">
+      <img class="logo" src="./img/logo.svg" alt="logo" />
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
-    </main>
+      <form class="form">
+        <label>
+          <input
+            type="text"
+            name="search-text"
+            placeholder="Search images..."
+            required
+          />
+        </label>
+        <button type="submit">Search</button>
+      </form>
+      <img class="dog" src="./img/dog_beer-min.png" alt="dog_beer" />
+    </div>
 
-    <load src="./partials/footer.html" />
-
+    <span class="loader hidden"></span>
+    <ul class="gallery"></ul>
+    <button class="loadMore hidden" type="button">Load more</button>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
